@@ -12,20 +12,20 @@ dotenv.load_dotenv()
 
 
 class Settings(BaseSettings):
-    JWT_AUDIENCE: str = ""
-    JWT_ISSUER: str = ""
-    HOST: str = "0.0.0.0"
-    PORT: int = 8090
-    RELOAD: bool = True
-    AUTH_URL: str = "http://localhost:8089"
-    TOKEN_URL: str = f"{AUTH_URL}/token"
-    AUTHORIZE_URL: str = "http://localhost:8089/authorize"
-    UNAUTHORIZED_URL: str = "http://localhost:8089/unauthorized"
-    CLIENT_ID: str = "raushan"
-    CLIENT_SECRET: str = "client_secret"
-    SECRET_KEY: str = "secret_key"
-    REDIRECT_URI: str = "http://localhost:8090/auth/callback"
-    RESPONSE_TYPE: str = "code"
+    JWT_AUDIENCE: str
+    JWT_ISSUER: str
+    HOST: str
+    PORT: int
+    RELOAD: bool
+    AUTH_URL: str
+    TOKEN_URL: str
+    AUTHORIZE_URL: str
+    UNAUTHORIZED_URL: str
+    CLIENT_ID: str
+    CLIENT_SECRET: str
+    SECRET_KEY: str
+    REDIRECT_URI: str
+    RESPONSE_TYPE: str
 
 
 settings = Settings()
